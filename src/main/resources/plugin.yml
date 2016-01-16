@@ -1,0 +1,44 @@
+name: ${project.artifactId}
+main: net.pocketpixels.buildingfall.BuildingFall
+version: ${project.version}
+website: ${project.url}
+description: Makes buildings fall
+author: Dallen
+commands:
+  createfall:
+    description: set an object to fall
+    usage: |
+            /createfall
+  startfall:
+    description: start an object falling
+    usage: |
+            /startfall <object>
+  stopfall:
+    description: stop a falling object
+    usage: |
+            /stopfall <object> <reset?>
+  resetfall:
+    description: reset an object that fell or was stopped
+    usage: |
+            /resetfall <object>
+  deletefall:
+    description: unset an obejct to fall
+    usage: |
+            /deletefall <object>
+permissions:
+  buildingfall.create:
+    default: op
+    description: permissions for building falling.
+  buildingfall.start:
+    default: op
+    description: permissions for building falling.
+  buildingfall.stop:
+    default: op
+    description: permissions for building falling.
+  buildingfall.reset:
+    default: op
+    description: permissions for building falling.
+  buildingfall.delete:
+    default: op
+    description: permissions for building falling.
+    
